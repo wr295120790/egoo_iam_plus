@@ -1,0 +1,135 @@
+﻿2018-05-21 11:33:16  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:33:17  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:33:17  com.egoonet.lighting.egoo_iam_plus.service.UserService.insertUser(UserService.java:37)  添加数据成功!
+2018-05-21 11:33:17  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=获取数据失败, errorCode=1}
+2018-05-21 11:34:40  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:34:42  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:34:42  com.egoonet.lighting.egoo_iam_plus.service.UserService.deleteById(UserService.java:87)  删除数据成功！
+2018-05-21 11:34:42  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=成功, errorCode=0}
+2018-05-21 11:34:59  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:35:01  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:35:01  com.egoonet.lighting.egoo_iam_plus.service.UserService.insertUser(UserService.java:37)  添加数据成功!
+2018-05-21 11:35:01  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=获取数据失败, errorCode=1}
+2018-05-21 11:38:23  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:38:25  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:38:25  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:82)  在解析时没有从data中获取到数据
+2018-05-21 11:38:25  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=获取数据失败, errorCode=1}
+2018-05-21 11:39:08  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:39:10  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:39:10  com.egoonet.lighting.egoo_iam_plus.service.UserService.deleteById(UserService.java:87)  删除数据成功！
+2018-05-21 11:39:10  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=成功, errorCode=0}
+2018-05-21 11:41:37  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:41:39  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:41:39  com.egoonet.lighting.egoo_iam_plus.service.UserService.deleteById(UserService.java:87)  删除数据成功！
+2018-05-21 11:41:39  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=获取数据失败, errorCode=1}
+2018-05-21 11:41:52  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:41:53  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:41:54  com.egoonet.lighting.egoo_iam_plus.service.UserService.insertUser(UserService.java:37)  添加数据成功!
+2018-05-21 11:41:54  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=获取数据失败, errorCode=1}
+2018-05-21 11:43:03  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:43:04  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:43:05  com.egoonet.lighting.egoo_iam_plus.service.UserService.deleteById(UserService.java:87)  删除数据成功！
+2018-05-21 11:43:05  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=获取数据失败, errorCode=1}
+2018-05-21 11:43:56  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:43:58  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:43:58  com.egoonet.lighting.egoo_iam_plus.service.UserService.deleteById(UserService.java:87)  删除数据成功！
+2018-05-21 11:43:58  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=成功, errorCode=0}
+2018-05-21 11:44:15  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:44:16  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:44:17  com.egoonet.lighting.egoo_iam_plus.service.UserService.insertUser(UserService.java:37)  添加数据成功!
+2018-05-21 11:44:17  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=成功, errorCode=0}
+2018-05-21 11:44:51  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:44:52  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:44:53  com.egoonet.lighting.egoo_iam_plus.service.UserService.updateUser(UserService.java:65)  更新数据成功!
+2018-05-21 11:44:53  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=成功, errorCode=0}
+2018-05-21 11:45:35  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:45:37  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:45:37  com.egoonet.lighting.egoo_iam_plus.service.UserService.updateUser(UserService.java:64)  更新数据成功!
+2018-05-21 11:45:37  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=成功, errorCode=0}
+2018-05-21 11:45:52  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:64)  userController准备建立连接
+2018-05-21 11:45:54  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:68)  userController已经建立连接
+2018-05-21 11:45:54  com.egoonet.lighting.egoo_iam_plus.service.UserService.deleteById(UserService.java:86)  删除数据成功！
+2018-05-21 11:45:54  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=成功, errorCode=0}
+2018-05-21 11:46:23  com.egoonet.lighting.egoo_iam_plus.controller.RoleController.roleBackJson(RoleController.java:55)  --------------此处是分隔符----------
+2018-05-21 11:46:23  com.egoonet.lighting.egoo_iam_plus.controller.RoleController.roleBackJson(RoleController.java:57)  准备进入连接！
+2018-05-21 11:46:25  com.egoonet.lighting.egoo_iam_plus.controller.RoleController.roleBackJson(RoleController.java:64)  已经建立连接
+2018-05-21 11:46:25  com.egoonet.lighting.egoo_iam_plus.controller.RoleController.roleBackJson(RoleController.java:75)  获取到角色信息了[RolePojo(id=1, name=tt, type=null, status=null, remark=null)]
+2018-05-21 11:46:25  com.egoonet.lighting.egoo_iam_plus.controller.RoleController.roleBackJson(RoleController.java:91)  返回的结果{errorMessage=成功, errorCode=0}
+2018-05-21 11:48:53  com.egoonet.lighting.egoo_iam_plus.controller.RoleController.roleBackJson(RoleController.java:55)  --------------此处是分隔符----------
+2018-05-21 11:48:53  com.egoonet.lighting.egoo_iam_plus.controller.RoleController.roleBackJson(RoleController.java:57)  准备进入连接！
+2018-05-21 11:48:56  com.egoonet.lighting.egoo_iam_plus.controller.RoleController.roleBackJson(RoleController.java:64)  已经建立连接
+2018-05-21 11:48:56  com.egoonet.lighting.egoo_iam_plus.controller.RoleController.roleBackJson(RoleController.java:75)  获取到角色信息了[RolePojo(id=1, name=tt, type=null, status=null, remark=null)]
+2018-05-21 11:48:56  com.egoonet.lighting.egoo_iam_plus.controller.RoleController.roleBackJson(RoleController.java:91)  返回的结果{errorMessage=成功, errorCode=0}
+2018-05-21 11:49:04  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:62)  准备建立连接
+2018-05-21 11:49:06  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:66)  已经建立连接
+2018-05-21 11:49:06  com.egoonet.lighting.egoo_iam_plus.service.UserRoleService.deleteUserAndRole(UserRoleService.java:92)  删除成功
+2018-05-21 11:49:06  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:84)  {delete=com.genesyslab.wfm8.API.service.config850.CfgValidationHolder@d3d266[
+  success=true
+  warningArrayNSizeIs=0
+  warningArray=<null>
+  errorArrayNSizeIs=0
+  errorArray=<null>
+  objectID=0
+]}这是获取后的信息
+2018-05-21 11:49:18  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:62)  准备建立连接
+2018-05-21 11:49:20  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:66)  已经建立连接
+2018-05-21 11:49:20  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:71)  这是解析后的数据===UserPojo(id=1, name=欧阳风华, userName=职员, gender=2, employeeId=001, jobId=550, jobName=财务主管, phone=741747741, email=xiangxiang@163.com, parentId=660, parentName=欧阳的下属, hireDate=Mon May 21 11:49:17 CST 2018, orgId=701, employeeType=110, status=1, date=Mon May 21 11:49:17 CST 2018, remark=职员)
+2018-05-21 11:49:20  com.egoonet.lighting.egoo_iam_plus.service.UserRoleService.addUserAndRole(UserRoleService.java:22)  进入到了增加的方法里面了
+2018-05-21 11:49:20  com.egoonet.lighting.egoo_iam_plus.service.UserRoleService.addUserAndRole(UserRoleService.java:50)  res的结果com.genesyslab.wfm8.API.service.config850.CfgValidationHolder@6dcf55[
+  success=true
+  warningArrayNSizeIs=0
+  warningArray=<null>
+  errorArrayNSizeIs=0
+  errorArray=<null>
+  objectID=1
+]
+2018-05-21 11:49:20  com.egoonet.lighting.egoo_iam_plus.service.UserRoleService.addUserAndRole(UserRoleService.java:53)  添加数据成功
+2018-05-21 11:49:20  com.egoonet.lighting.egoo_iam_plus.service.UserRoleService.addUserAndRole(UserRoleService.java:57)  {CfgUser=com.genesyslab.wfm8.API.service.config850.CfgValidationHolder@6dcf55[
+  success=true
+  warningArrayNSizeIs=0
+  warningArray=<null>
+  errorArrayNSizeIs=0
+  errorArray=<null>
+  objectID=1
+]}=====
+2018-05-21 11:49:20  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:84)  {CfgUser=com.genesyslab.wfm8.API.service.config850.CfgValidationHolder@6dcf55[
+  success=true
+  warningArrayNSizeIs=0
+  warningArray=<null>
+  errorArrayNSizeIs=0
+  errorArray=<null>
+  objectID=1
+]}这是获取后的信息
+2018-05-21 11:50:21  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:62)  准备建立连接
+2018-05-21 11:50:22  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:66)  已经建立连接
+2018-05-21 11:50:23  com.egoonet.lighting.egoo_iam_plus.service.UserRoleService.updateUserAndRole(UserRoleService.java:72)  更新数据成功
+2018-05-21 11:50:23  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:84)  {success=com.genesyslab.wfm8.API.service.config850.CfgUser@137d7a[
+  gswUserId=1
+  wmUser=乘客
+  wmTimezoneId=0
+  wmBuilderId=0
+  wmSecurityRoleId=0
+  gswFirstName=<null>
+  gswLastName=<null>
+  gswEmail=<null>
+  gswTenantId=0
+  wmUserSecurityNSizeIs=0
+  wmUserSecurity=<null>
+  timestamp=0
+]}这是获取后的信息
+2018-05-21 11:51:15  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:62)  准备建立连接
+2018-05-21 11:51:16  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:66)  已经建立连接
+2018-05-21 11:51:16  com.egoonet.lighting.egoo_iam_plus.service.UserRoleService.deleteUserAndRole(UserRoleService.java:89)  删除成功
+2018-05-21 14:39:31  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:82)  在解析时没有从data中获取到数据
+2018-05-21 14:39:31  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=成功, errorCode=0}
+2018-05-21 14:39:59  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:82)  在解析时没有从data中获取到数据
+2018-05-21 14:39:59  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=成功, errorCode=0}
+2018-05-21 14:43:40  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:82)  在解析时没有从data中获取到数据
+2018-05-21 14:43:40  com.egoonet.lighting.egoo_iam_plus.controller.UserController.wfmUserJson(UserController.java:99)  {errorMessage=成功, errorCode=0}
+2018-05-21 15:46:09  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:62)  准备建立连接
+2018-05-21 15:46:11  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:66)  已经建立连接
+2018-05-21 15:46:11  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:71)  这是解析后的数据===UserPojo(id=1, name=欧阳风华, userName=乘客, gender=2, employeeId=001, jobId=550, jobName=财务主管, phone=741747741, email=xiangxiang@163.com, parentId=660, parentName=欧阳的下属, hireDate=Mon May 21 15:46:08 CST 2018, orgId=701, employeeType=110, status=1, date=Mon May 21 15:46:08 CST 2018, remark=职员)
+2018-05-21 15:46:12  com.egoonet.lighting.egoo_iam_plus.service.UserRoleService.addUserAndRole(UserRoleService.java:51)  添加数据成功
+2018-05-21 16:55:22  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:60)  准备建立连接
+2018-05-21 16:55:24  com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController.userRoleJson(UserRoleController.java:64)  已经建立连接
+2018-05-21 16:55:24  com.egoonet.lighting.egoo_iam_plus.service.UserRoleService.deleteUserAndRole(UserRoleService.java:88)  删除成功

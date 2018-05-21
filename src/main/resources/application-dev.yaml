@@ -1,0 +1,48 @@
+#server
+server:
+  port: 8080
+
+#spring
+spring:
+  datasource:
+    multi: false
+    url: "jdbc:oracle:thin:@127.0.0.1:1521:xe"
+    username: "wangbowen"
+    password: "123456"
+    driverClassName: "oracle.jdbc.OracleDriver"
+    testOnBorrow: true
+    testWhileIdle: true
+    validationQuery: ALTER SESSION SET NLS_TIMESTAMP_FORMAT='YYYY-MM-DD HH24:MI:SS.ff3'
+egoo:
+  redis:
+    redis-type: single
+    hostname: "127.0.0.1"
+    port: 6379
+    dbid: 14
+    password: "yyzc"
+    timeout: 0
+    addrlist: ""
+    client-name: egoo
+
+#pagehelper
+pagehelper:
+  helperDialect: oracle
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+#iam
+iam:
+  # 系统编码
+  systemCode: "iam"
+  # 是否有审批流程
+  isAudit: true
+
+#wfm
+wfm:
+  joint:
+    appName: "WFMServer"
+    wfmServerHost: "222.73.213.174"
+    wfmServerPort: "21007"
+    userName: "default"
+    password: "password"
