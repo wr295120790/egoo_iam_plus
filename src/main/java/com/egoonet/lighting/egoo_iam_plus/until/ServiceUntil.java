@@ -25,15 +25,15 @@ import java.util.*;
 @Component(value = "ServiceUntil")
 public class ServiceUntil {
 
-    @Value("${wfm.joint.appName}")
+    @Value("${wfm.appName}")
     private String appName = "appName";
-    @Value("${wfm.joint.wfmServerHost}")
+    @Value("${wfm.wfmServerHost}")
     private String wfmServerHost = "222.73.213.174";
-    @Value("${wfm.joint.wfmServerPort}")
+    @Value("${wfm.wfmServerPort}")
     private String wfmServerPort = "21007";
-    @Value("${wfm.joint.userName}")
+    @Value("${wfm.userName}")
     private String userName = "default";
-    @Value("${wfm.joint.password}")
+    @Value("${wfm.password}")
     private String password = "password";
 
     public static String getCurrentUrl(String url, String wfmServerHost, String wfmServerPort) {
@@ -58,19 +58,6 @@ public class ServiceUntil {
             ServiceInfo serviceInfo = sessionInfo.getServices().get(i);
             serviceInfoMap.put(serviceInfo.getServiceName(), serviceInfo);
         }
-
-//        if (serviceInfoMap.containsKey("SessionService800"))
-//
-//        {
-//            sessionService = getCurrentService(WFMSessionService800Soap.class,
-//                    "/SOAPServer/WFMSessionService800.wsdl", "WFMSessionService800",
-//                    serviceInfoMap.get("SessionService800").getServiceURL());
-//        }
-//
-//        cfgService = getCurrentService(WFMConfigService850Soap.class,
-//                "/ConfigService/WFMConfigService850.wsdl", "WFMConfigService850",
-//                serviceInfoMap.get("ConfigService850").getServiceURL());
-
         return serviceInfoMap;
     }
 

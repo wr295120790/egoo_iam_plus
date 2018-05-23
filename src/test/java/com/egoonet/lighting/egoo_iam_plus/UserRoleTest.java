@@ -1,10 +1,10 @@
 package com.egoonet.lighting.egoo_iam_plus;
 
-import com.egoonet.lighting.egoo_iam_plus.controller.UserController;
+import com.egoonet.lighting.egoo_iam_plus.controller.UserRoleController;
 import net.sf.json.JSONObject;
 import org.junit.Test;
 
-public class TestConnect {
+public class UserRoleTest {
     @Test
     public void json() {
         String jsonStr = "{\"head\":" +
@@ -18,7 +18,7 @@ public class TestConnect {
                 "\"opType\":\"3\"," +
                 "\"data\":[{\"id\":\"001\"," +
                 "\"name\":\"欧阳风华\"," +
-                "\"userName\":\"乘客\"," +
+                "\"userName\":\"机长\"," +
                 "\"gender\":\"2\"," +
                 "\"employeeId\":\"001\"," +
                 "\"jobId\":\"550\"," +
@@ -33,9 +33,9 @@ public class TestConnect {
                 "\"status\":\"1\"," +
                 "\"date\":\"2017-07-10 10:10:10\"," +
                 "\"remark\":\"职员\"}]}}";
-
         JSONObject jsonObject = JSONObject.fromObject(jsonStr);
-        UserController controller = new UserController();
-        controller.wfmUserJson(jsonObject);
+
+        UserRoleController userRoleController = new UserRoleController();
+        userRoleController.userRoleJson(jsonObject);
     }
 }

@@ -11,15 +11,12 @@ import java.util.*;
 @Log4j
 @Service
 public class RoleService {
-    /*@Autowired
-    private RoleGetService roleGetService;*/
-
     /**
      * 根据getRole方法通过传参数id，进行封装，将获取到的子系统的角色信息返回给用户这边
      */
     @GetMapping("/getRole")
-    public List<RolePojo> getRoleList(WFMConfigService850Soap cfgService, CfgUser cfgUser) {
-        List<RolePojo> roleList = new ArrayList<>();
+    public Map<String,Object> getRoleList(WFMConfigService850Soap cfgService, CfgUser cfgUser) {
+        Map<String,Object> roleMap = new HashMap<>();
 
         int roleId = cfgUser.getWmSecurityRoleId();
         List<Integer> roleIds = new ArrayList<>();
@@ -34,9 +31,10 @@ public class RoleService {
             RolePojo rolePojo = new RolePojo();
             rolePojo.setId(wfmRoleId);
             rolePojo.setName(wfmName);
-            roleList.add(rolePojo);
-            return roleList;
+
+            roleMap.put("Role",rolePojo);
+            return roleMap;
         }
-        return roleList;
+        return roleMap;
     }
 }

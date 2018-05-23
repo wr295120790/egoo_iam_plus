@@ -1,6 +1,5 @@
 package com.egoonet.lighting.egoo_iam_plus.controller;
 
-import com.egoonet.lighting.egoo_iam_plus.entity.RolePojo;
 import com.egoonet.lighting.egoo_iam_plus.service.RoleService;
 import com.egoonet.lighting.egoo_iam_plus.until.ServiceUntil;
 import com.genesyslab.wfm8.API.service.config850.CfgUser;
@@ -12,7 +11,6 @@ import lombok.extern.log4j.Log4j;
 import net.sf.json.JSONArray;
 import net.sf.json.JsonConfig;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.*;
 
 /**
@@ -21,14 +19,11 @@ import java.util.*;
  */
 
 @RestController
-@RequestMapping(value = "../controller", produces = "application/json;charset=UTF-8")//映射前台的地址
+@RequestMapping(value = "/controller", produces = "application/json;charset=UTF-8")
 @Api(value = "排版统一权限和参数配置管理", tags = "UserController", description = "排版统一权限和参数配置管理")
 @Log4j
 public class RoleController {
-   /* @Autowired
-    private RoleService roleHandleService;*/
-
-    @PostMapping("/rolecompose")//给别人提供的地址
+    @PostMapping("/roleCompose")
     @ApiOperation("用户组/角色/用户数据推送接口")
     public Map<String, Object> roleBackJson(@RequestBody Map<String, Object> parameter) {
 
@@ -55,63 +50,50 @@ public class RoleController {
         log.info("--------------此处是分隔符----------");
 
         log.info("准备进入连接！");
-        ServiceUntil serviceUntil = new ServiceUntil();
         WFMConfigService850Soap cfgService = null;
-        Map<String, ServiceInfo> serviceInfoMap = serviceUntil.getConnect();
+        Map<String, ServiceInfo> serviceInfoMap = new ServiceUntil().getConnect();
         cfgService = ServiceUntil.getCurrentService(WFMConfigService850Soap.class,
                 "/ConfigService/WFMConfigService850.wsdl", "WFMConfigService850",
                 ServiceUntil.getCurrentUrl(serviceInfoMap.get("ConfigService850").getServiceURL(), "222.73.213.174", "21007"));
         log.info("已经建立连接");
 
         RoleService roleService = new RoleService();
-        List<RolePojo> getRoles = new ArrayList();
+        Map<String,Object> getRoles = new HashMap<>();
         try {
             for (CfgUser cfgUser : listCfgUser) {
-                getRoles = roleService.getRoleList(cfgService,cfgUser);//角色id
+                getRoles = roleService.getRoleList(cfgService, cfgUser);//角色id
             }
         } catch (Exception e) {
             log.error("没有从json解析出来data数据", e.getCause());
         }
-        log.debug("获取到角色信息了"+getRoles);
 
         Map<String, Object> result = new HashMap<>();
-        Map<String, Object> errorHead = new HashMap<String, Object>();
 
-        if (getRoles != null) {
+        Map<String, Object> resultHead = new HashMap<>();
+        resultHead.put("tenantId", "boc");
+        resultHead.put("vers", "1.0");
+        resultHead.put("reqId", reqId);
+        resultHead.put("layerId",layerId);
+        resultHead.put("seqId",seqId);
+        resultHead.put("times", times);
+        resultHead.put("compId", compId);
+        if (!getRoles.isEmpty() && getRoles != null) {
             int errorCode = 0;
             String errorMessage = "成功";
-            errorHead.put("errorCode", errorCode);
-            errorHead.put("errorMessage", errorMessage);
+            resultHead.put("errorCode", errorCode);
+            resultHead.put("errorMessage", errorMessage);
         } else {
             int errorCode = 1;
             String errorMessage = "获取数据失败";
-            errorHead.put("errorCode", errorCode);
-            errorHead.put("errorMessage", errorMessage);
+            resultHead.put("errorCode", errorCode);
+            resultHead.put("errorMessage", errorMessage);
         }
-        log.debug("返回的结果" + errorHead);
-
-        errorHead.put("tenantld", "boc");
-        errorHead.put("vers", "1.0");
-        errorHead.put("reqId", reqId);
-        errorHead.put("layerId", layerId);
-        errorHead.put("seqId", seqId);
-        errorHead.put("times", times);
-        errorHead.put("compId", compId);
-
-        Map<String, Object> errorInfo = new HashMap<String, Object>();
-
-        result.put("errorHead", errorHead);
-        result.put("errorInfo", errorInfo);
-
-        Map<String, Object> resultHead = new HashMap<>();
-        resultHead.put("reqId", reqId);
-        resultHead.put("times", times);
-        resultHead.put("compId", compId);
 
         Map<String, Object> resultInfo = new HashMap<>();
         resultInfo.put("dataType", dataType);
         resultInfo.put("opType", opType);
-        resultInfo.put("dataType", getRoles);
+        resultInfo.put("data", getRoles);
+        log.debug(getRoles);
 
         result.put("head", resultHead);
         result.put("info", resultInfo);

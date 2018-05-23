@@ -3,6 +3,7 @@ package com.egoonet.lighting.egoo_iam_plus.service;
 import com.egoonet.lighting.egoo_iam_plus.entity.UserPojo;
 import com.genesyslab.wfm8.API.service.config850.*;
 import lombok.extern.log4j.Log4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,8 +15,10 @@ import java.util.*;
 @Log4j
 @Service
 public class UserRoleService {
+    @Autowired
+    private RoleGetService roleGetService;
 
-    @PostMapping("../addUserAndRole")
+    @PostMapping("/addUserAndRole")
     public Map<String, Object> addUserAndRole(WFMConfigService850Soap cfgService, UserPojo userPojo, int roleId) {
         Map<String, Object> addResult = new HashMap<>();
 
@@ -27,7 +30,6 @@ public class UserRoleService {
         List<Integer> roleIds = new ArrayList<>();
         roleIds.add(roleId);
 
-        RoleGetService roleGetService = new RoleGetService();
         List<CfgSecurityRole> roleList = roleGetService.getRoles(cfgService, roleIds);
 
         for (CfgSecurityRole role : roleList) {
@@ -48,14 +50,13 @@ public class UserRoleService {
             if (res.isSuccess()) {
                 addResult.put("CfgUser", res);
                 log.info("添加数据成功");
-            } else {
-                log.debug("没有添加成功");
+                return addResult;
             }
         }
         return addResult;
     }
 
-    @PutMapping("../updateUserAndRole")
+    @PutMapping("/updateUserAndRole")
     public Map<String, Object> updateUserAndRole(WFMConfigService850Soap cfgService, UserPojo userPojo) {
         Map<String, Object> updateResult = new HashMap<>();
 
@@ -69,24 +70,20 @@ public class UserRoleService {
             updateResult.put("success", cfgUser);
             log.info("更新数据成功");
             return updateResult;
-        } else {
-            log.debug("没有更新成功");
         }
         return updateResult;
     }
 
-    @DeleteMapping("../deleteUserAndRole")
+    @DeleteMapping("/deleteUserAndRole")
     public Map<String, Object> deleteUserAndRole(WFMConfigService850Soap cfgService, @PathVariable("userId") Integer id) {
         Map<String, Object> getDelete = new HashMap<>();
 
         CfgValidationHolder res = cfgService.deleteCfgObject(ECfgObjectType.CFG_USER_OBJECT, 0, id,
                 true);
         if (res.isSuccess()) {
-            getDelete.put("delete", res);
+            getDelete.put("delete", 0);
             log.info("删除成功");
             return getDelete;
-        } else {
-            log.debug("没有删除成功");
         }
         return getDelete;
     }

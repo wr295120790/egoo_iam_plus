@@ -32,6 +32,11 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
@@ -39,12 +44,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.egoonet.lighting</groupId>
-            <artifactId>devtools-druid-spring-boot-starter</artifactId>
-            <version>2.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -69,12 +68,6 @@
         <dependency>
             <groupId>com.egoonet.lighting</groupId>
             <artifactId>egoo_commons</artifactId>
-            <version>2.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.egoonet.lighting</groupId>
-            <artifactId>egoo_commons_cfgtools</artifactId>
             <version>2.0.1-SNAPSHOT</version>
         </dependency>
 

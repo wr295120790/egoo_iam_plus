@@ -20,7 +20,7 @@ public class CfgTestConnect {
                 "\"gswFirstName\":\"欧阳风华\"," +
                 "\"gswTenantId \":\"乘客\"," +
                 "\"gswEmail\":\"1655615615616@163.com\"," +
-                "\"wmSecurityRoleId\":\"1\"}]}}";
+                "\"wmSecurityRoleId\":\"3\"}]}}";
 
         JSONObject jsonObject = JSONObject.fromObject(jsonStr);
         RoleController roleController = new RoleController();

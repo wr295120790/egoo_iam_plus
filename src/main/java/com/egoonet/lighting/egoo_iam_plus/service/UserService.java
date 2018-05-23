@@ -11,11 +11,6 @@ import java.util.*;
 @Log4j
 @Service
 public class UserService {
-   /* @Autowired
-    private RoleGetService roleGetService;*/
-    /*@Autowired
-    private ServiceUntil serviceUntil;*/
-
     /**
      * opType选择1的时候
      * user增加数据
@@ -23,7 +18,7 @@ public class UserService {
      * @param userPojo
      * @return
      */
-    @PostMapping("../insertUser")
+    @PostMapping("/insertUser")
     public Map<String, Object> insertUser(WFMConfigService850Soap cfgService, UserPojo userPojo) {
         Map<String, Object> insertResult = new HashMap<>();
 
@@ -36,8 +31,6 @@ public class UserService {
             insertResult.put("userPojo", res);
             log.info("添加数据成功!");
             return insertResult;
-        } else {
-            log.debug("数据没有添加进去，请确认！");
         }
         return insertResult;
     }
@@ -49,7 +42,7 @@ public class UserService {
      * @param userPojo
      * @return
      */
-    @PutMapping("../updateUser")
+    @PutMapping("/updateUser")
     public Map<String, Object> updateUser(WFMConfigService850Soap cfgService, UserPojo userPojo) {
         Map<String, Object> updateResult = new HashMap<>();
 
@@ -63,8 +56,6 @@ public class UserService {
             updateResult.put("userPojo", res);
             log.info("更新数据成功!");
             return updateResult;
-        } else {
-            log.debug("更改的数据没有得到，请确认!");
         }
         return updateResult;
     }
@@ -76,17 +67,16 @@ public class UserService {
      * @param id
      * @return
      */
-    @DeleteMapping("../deleteUser/{id}")
-    public Map<String, Object> deleteById(WFMConfigService850Soap cfgService, @PathVariable("id") Integer id) {
+    @DeleteMapping("/deleteUser")
+    public Map<String, Object> deleteById(WFMConfigService850Soap cfgService, int id) {
         Map<String, Object> deleteResult = new HashMap<>();
 
-        CfgValidationHolder res = cfgService.deleteCfgObject(ECfgObjectType.CFG_USER_OBJECT, 0, id,
-                true);
+        CfgValidationHolder res = cfgService.deleteCfgObject(ECfgObjectType.CFG_USER_OBJECT,
+                0, id, true);
         if (res.isSuccess()) {
+            deleteResult.put("成功", 0);
             log.info("删除数据成功！");
             return deleteResult;
-        } else {
-            log.debug("删除数据没有成功，请确认");
         }
         return deleteResult;
     }
