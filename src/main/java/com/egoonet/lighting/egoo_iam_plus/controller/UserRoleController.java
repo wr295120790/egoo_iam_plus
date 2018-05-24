@@ -27,7 +27,7 @@ public class UserRoleController {
     private UserRoleService userRoleService;
     private WFMConfigService850Soap cfgService;
 
-    @PostMapping("/userRolecompose")//给别人提供的地址
+    @PostMapping("/userRoleCompose")//给别人提供的地址
     @ApiOperation("用户组/角色/用户数据推送接口")
     public Map<String, Object> userRoleJson(@RequestBody Map<String, Object> parameter) {
 
@@ -86,7 +86,7 @@ public class UserRoleController {
         resultHead.put("reqId", reqId);
         resultHead.put("times", times);
         resultHead.put("compId", compId);
-        if (getUserAndRole != null || getUserAndRole.equals(0)) {
+        if (!getUserAndRole.isEmpty() || getUserAndRole.equals(0)) {
             int errorCode = 0;
             String errorMessage = "成功";
             resultHead.put("errorCode", errorCode);
